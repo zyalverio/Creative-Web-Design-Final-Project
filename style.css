@@ -1,0 +1,10 @@
+.main-header{
+    background: url(images/way.jpeg);
+    min-height: 700px;
+    background-size: auto;
+    background-position: center;
+    color: #fff;
+}
+.main-header .showcase{
+    padding-top: 100px;
+}
