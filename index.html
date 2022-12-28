@@ -1,48 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html long="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UFT-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Material icons-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
+    <!-- Material Icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" 
+    rel="stylesheet">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Custom CSS-->
+    <link rel="stylesheet" href="style.css">
+    <title>Personal Site</title>
 
-    <title>Creative Web Design</title>
 </head>
-<body class="grey darken-4 grey-text text-lighten-2">
-    <!--Breadcrumbs-->
-    <nav>
-        <div class="nav-wrapper">
-          <div class="col s12 center">
-            <a href="cards.html" target="_blank" class="breadcrumb">Cards</a>
-            <a href="collections.html" target="_blank" class="breadcrumb">Collections</a>
-            <a href="grid.html" target="_blank" class="breadcrumb">Grid</a>
-            <a href="media.html" target="_blank" class="breadcrumb">Media</a>
-            <a href="modals.html" target="_blank" class="breadcrumb">Modals</a>
-            <a href="navbar.html" target="_blank" class="breadcrumb">Navbar</a>
-            <a href="topography.html" target="_blank" class="breadcrumb">Topography</a>
-          </div>
-        </div>
-      </nav>
-    
-      <div class="container">
-        <!--Basic Cards-->
-        <h4><card-panel></card-panel></h4>
-        <div class="h4 card-panel red lighten-1 white-text">
-            Hello! I am Zy Alverio.
-        </div>
-        <div class="h4 card-panel cyan lighten-1 black-text">
-            I am a new web designer. Hope you like it.
-        </div>
-      </div>
+<body>
 
-      <br>
+    <!-- Header-->
+    <header class="main-header">
+    <nav class="transparent">
+        <div class="container">
+            <div class="nav-wrapper">
+            <a href="" class="brand-logo center black-text">Space Sheet</a>
+            <a href="#" data-target="slide-out" class="sidenav-trigger">
+                <i class="material-icons">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+                <li class="active">
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="solutions.html">Solutions</a>
+            </li>
+            <li>
+                <a href="signup.html">Sign Up</a>
+            </li>
+            <li>
+                <a href="login.html">Login</a>
+                </li>
+            </ul>
+        </div>
+    </div> 
+</nav>
 
-      <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    
-</body>
-</html>
+    <!-- Showcase-->
+    <div class="showcase container">
+        <div class="row">
+            <div class="col s12 m10 offset-m1 center">
+                <h3 class="black-text">Welcome To Milky Way</h3>
+                <h1 class="black-text">Build Your Own Future</h1>
+                <p class="black-text">It is not always about the talent, but the willingness to learn. </p>
+                <br><br>
+                <a href="" class="btn btn-medium white blue-text">Sign Up</a>
+                <a href="" class="btn btn-medium deep-blue white-text">Learn More</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <!-- Sidenav-->
+    <ul id="slide-out" class="sidenav">
+    <li class="active">
+        <a href="index.html">Home</a>
+    </li>
+    <li>
+        <a href="solutions.html">Solutions</a>
+    </li>
+    <li>
+        <a href="signup.html">Sign Up</a>
+    </li>
+    </ul>
+
+    <!-- Section Icon Boxes-->
+    <section class="section section-icons center">
+    <div class="container">
+        <div class="row">
+            <col class="s12 m4">
+            <div class="card-panel grey lighten-3 black-text">
+                <i class="material-icons left">search</i>
+                <i class="material-icons right">clear</i>
+            </div>
+        </div>
+    </div>
+    </section>
+
+   <!-- Jquery CDN-->
+   <script src="https://code.jquery.com/jquery-3.6.3.min.js" 
+   integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" 
+   crossorigin="anonymous"></script>
+
+   <!-- Compiled and minified JavaScript -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+   <script>
+    $(document).ready(function(){
+    $('.sidenav').sidenav({
+        edge: 'right',
+        inDuration: 550,
+        outDuration: 550
+    });
+  });
+   </script>
